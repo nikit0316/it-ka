@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Navbar.modules.css';
+import styles from './Header.module.css';
 
 const Header = () => {
     return <header className={styles.header}>

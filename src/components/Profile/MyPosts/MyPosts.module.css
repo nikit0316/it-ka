@@ -2,3 +2,10 @@
   grid-area:c;
   background-color: cornflowerblue;
 }
+
+.item{
+  color: greenyellow;
+}
+img {
+  width: 200px;
+}
