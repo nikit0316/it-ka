@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = () => {
-  return (
-    <div>
-      <img src="https://www.zastavki.com/pictures/originals/2014/Nature___Waterfalls____Waterfall_in_the_rainforest_071165_.jpg"></img>
-      <div>avatar+descrip</div>
-      <MyPosts />
-    </div>
-  );
+const Profile = (props) => {
+    return (
+        <div>
+            <ProfileInfo/>
+            <MyPosts posts={props.state.posts}/>
+        </div>
+    );
 };
 
 export default Profile;
