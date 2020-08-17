@@ -13,15 +13,24 @@ const MyPosts = (props) => {
 
     let postElements = props.posts.map(post => <Post id={post.id} message={post.message} count={post.count}/>)
 
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+        debugger;
+        let text = newPostElement.current.value;
+        props.addPost(text)
+    }
+
     return (
         <div className={styles.postsBlock}>
             My posts
             <div>
                 <div>
-                    <textarea></textarea>
+                    <textarea ref={newPostElement}></textarea>
                 </div>
                 <div>
-                    <button>Add Post</button>
+                    <button onClick = { addPost }>Add Post
+                    </button>
                     <button>Remove</button>
                 </div>
             </div>

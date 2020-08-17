@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25eedb62-4781-4b6a-a6cf-429cbbf7a04e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +55,18 @@
       <recent name="F:\React-kabzda\projects\01\react-kabzda-1\it-ka\src\components\Profile\ProfileInfo" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="run" type="NodeJSConfigurationType" node-parameters="start" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -84,11 +97,13 @@
       <workItem from="1596221037860" duration="404000" />
       <workItem from="1596221588357" duration="5709000" />
       <workItem from="1596269668138" duration="16806000" />
+      <workItem from="1597173860868" duration="821000" />
+      <workItem from="1597177332026" duration="7566000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -102,7 +117,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="914" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596287404797">
