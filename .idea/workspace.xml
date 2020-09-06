@@ -100,6 +100,9 @@
       <workItem from="1597173860868" duration="821000" />
       <workItem from="1597177332026" duration="7566000" />
       <workItem from="1598380794281" duration="7250000" />
+      <workItem from="1598740193705" duration="1221000" />
+      <workItem from="1598793370828" duration="60000" />
+      <workItem from="1599082428733" duration="3794000" />
     </task>
     <servers />
   </component>
@@ -152,5 +155,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="809" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1596230820055" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <line>4</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
