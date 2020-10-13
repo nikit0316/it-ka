@@ -24,32 +24,36 @@ let store = {
             ]
         }
     },
-    getState(){
-      return this._state;
+
+    getState() {
+        return this._state;
     },
-    _callSubscriber(){
+
+    _callSubscriber() {
         console.log('State changed');
     },
-    addPost(postMessage) {
-        debugger;
-        let newPost = {
-            id: 5,
-            message: this._state.profilePage.newPostText,
-            count:3
-        };
 
-        this._state.profilePage.posts.push(newPost);
-        this._state.profilePage.newPostText='';
-        this._callSubscriber(this._state);
-    },
-    updateNewPostText(newText) {
-        this._state.profilePage.newPostText=newText;
-        this._callSubscriber(this._state);
-    },
     subscribe(observer) {
-        this._callSubscriber=observer;  //observer pattern
+        this._callSubscriber = observer;  //observer pattern
+    },
+
+    dispatch(action) {
+        if (action.type === 'ADD-POST') {
+            debugger;
+            let newPost = {
+                id: 5,
+                message: this._state.profilePage.newPostText,
+                count: 3
+            };
+            this._state.profilePage.posts.push(newPost);
+            this._state.profilePage.newPostText = '';
+            this._callSubscriber(this._state);
+        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+            this._state.profilePage.newPostText = action.message;
+            this._callSubscriber(this._state);
+        }
     }
 }
 
-window.store=store;
+window.store = store;
 export default store;
