@@ -10,7 +10,7 @@ let store = {
             newPostText: 'it-kamasutra'
         },
         messagesPage: {
-            dialogs: [
+            dialogs: [ 
                 {id: 1, name: 'Dimon'},
                 {id: 2, name: 'Dimych'},
                 {id: 3, name: 'Andrey'},

@@ -2,6 +2,19 @@ import React from "react";
 import styles from "./MyPosts.module.css";
 import Post from "./Post/Post.jsx";
 
+let addPostActionCreator =()=> {
+    return {
+        type: 'ADD-POST'
+    }
+}
+
+let updateNewPostTextActionCreator = (text) => {
+    return {
+        type: 'UPDATE-NEW-POST-TEXT',
+        message: text
+    }
+}
+
 const MyPosts = (props) => {
 
     /*let postData=[
@@ -16,14 +29,14 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
-        let action = {type: 'ADD-POST'};
-        props.dispatch(action);
+        //let action = { type: 'ADD-POST'};
+        props.dispatch(addPostActionCreator());
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = {type: 'UPDATE-NEW-POST-TEXT', message: text};
-        props.dispatch(action);
+        //let action = {type: 'UPDATE-NEW-POST-TEXT', message: text};
+        props.dispatch(updateNewPostTextActionCreator(text));
     }
 
     return (
