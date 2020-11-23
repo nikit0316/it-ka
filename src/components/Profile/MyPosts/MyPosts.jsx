@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./MyPosts.module.css";
 import Post from "./Post/Post.jsx";
+import {addPostActionCreator, updateNewPostTextCreator} from "../../../redux/state";
 
 let addPostActionCreator =()=> {
     return {
