@@ -65,24 +65,20 @@ let store = {
         } else if (action.type === SEND_MESSAGE) {
             let body = this._state.messagesPage.newMessageBody;
             this._state.messagesPage.newMessageBody='';
+            this._state.messagesPage.messages.push({id:6, message: body});
             this._callSubscriber(this._state);
         }
     }
 }
 
-export const addPostActionCreator = () => {
+export const addPostActionCreator = () => ({type: ADD_POST})
 
-    return {
-        type: ADD_POST
-    }
-}
+export const updateNewPostTextCreator = (text) =>
+    ({  type: UPDATE_NEW_POST_TEXT,
+        newText: text})
 
-export const updateNewPostTextCreator = (text) => {
-    return {
-        type: UPDATE_NEW_POST_TEXT,
-        newText: text
-    }
-}
+export const sendMessageCreator = () => ({type: SEND_MESSAGE})
+export const updateNewMessageBodyCreator = (body) => ({type: UPDATE_NEW_MESSAGE_BODY, body: body})
 
 window.store = store;
 export default store;
